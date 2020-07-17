@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+<head>
+<title>18CS Coders</title>
+<link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+<header>
+<h1><a href="{% url 'home' %}">Welcome to Coding World</a></h1>
+</header>
+<div>
+    {% block content %}
+    {% endblock content %}
+    </div>
+    </body>
+    </html>

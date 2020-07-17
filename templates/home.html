@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="nav-right">
+    <a href="{% url 'post_new' %}">+ New Message Post</a>
+</div>
+{% for post in object_list %}
+<div class="post-entry">
+<h2><a href="">{{ post.roll_no }}</a></h2>
+<p>{{ post.message }}</p>
+</div>
+{% endfor %}
+{% endblock content %}
